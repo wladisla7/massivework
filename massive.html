@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  const task1 = [];
+  task1.push (1,2,3,4,5,6,7,8,9,10);
+  console.log(task1);
+  task1.unshift (0);
+  console.log(task1);
+  task1.splice(0,1);
+  console.log(task1);
+  task1.splice(9,1);
+  console.log(task1);
+  task1.splice(4,1);
+  console.log(task1);
+  task1.splice(4,0,5);
+  console.log(task1);
+  task1.slice(0,10);
+  console.log(task1);
+  task1.splice(5,10);
+  console.log(task1);
+
+  const task2 = [, , , , , , , ,]
+  task2.fill(0,0,4);
+  console.log(task2);
+
+  const result = [];
+  task2.forEach(function(value) {
+    result.push(value)
+  })
+  console.log(result);
+
+  const task3 = [1,2,3,4,5,6,7,8,9,10];
+  const result2 = task3.map( x => x * 2)
+  console.log(result2);
+
+  const task4 = ["task" ,"number", "four"];
+  const resul4 = task4.join(" && ");
+  console.log(resul4);
+
+  
+ 
+  const product1 = {
+    name: "apple",
+    price: 10,
+    Stock: "InStock",
+    ValueInStock:4,
+  }
+
+  const product2 = {
+    name: "apple2",
+    price: 10,
+    Stock: "OutofStock",
+    ValueInStock:5,
+  }
+
+  const product3 = {
+    name: "apple3",
+    price: 10,
+    Stock: "InStock",
+    ValueInStock:9,
+  }
+
+  const productsmassive = [product1,product2,product3];
+  console.log(productsmassive);
+
+  function StockInfo(value){
+    if (value.Stock === "InStock"){
+      return true;
+    }
+  }
+
+  let result5 = productsmassive.filter(StockInfo);
+  
+  console.log(result5);
+
+  function StockInfoProducts(value){
+    if (value.ValueInStock > 5){
+      return true;
+    }
+  }
+
+  let result6 = productsmassive.filter(StockInfoProducts);
+  console.log(result6);
+
+
+  //////////////////////////////////////////////
+
+
+  
+
+  const task7 = +prompt(`Index of product`);
+
+  let task7copy = productsmassive.slice();
+  const bask = [  Object.assign (productsmassive[task7]) ];
+
+
+  
+  // Object.assign - (что копируем, что добавить)
+  
+
+
+  console.log(bask);
+
+  ////////////////////////////////////////////////
+
+const user = {
+  username:"user",
+  age:12,
+  isMale:"female",
+  password:33,
+}
+
+ 
+ 
+
+ 
+
+
+
+    
+ 
+  
+   
+   
+ 
+  
+
+</script>
+</html>
